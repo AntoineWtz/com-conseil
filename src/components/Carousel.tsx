@@ -10,15 +10,14 @@ const Carousel: React.FC = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
             >
-                {/* Add your images and phrases here */}
                 <div className="min-w-full">
-                    <img src="https://via.placeholder.com/1200x400" alt="Carousel 1" />
+                    <img src="../assets/images/carousel-1.jpg" alt="Carousel 1" />
                 </div>
                 <div className="min-w-full">
-                    <img src="https://via.placeholder.com/1200x400" alt="Carousel 2" />
+                    <img src="../assets/images/carousel-2.jpg" alt="Carousel 2" />
                 </div>
                 <div className="min-w-full">
-                    <img src="https://via.placeholder.com/1200x400" alt="Carousel 3" />
+                    <img src="../assets/images/carousel-3.jpg" alt="Carousel 3" />
                 </div>
             </motion.div>
         </div>

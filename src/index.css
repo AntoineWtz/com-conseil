@@ -12,5 +12,5 @@ footer {
 }
 
 a {
-  @apply text-[#208DB2] hover:underline;
+  @apply text-[#FFFFFF] hover:text-[#208DB2];
 }

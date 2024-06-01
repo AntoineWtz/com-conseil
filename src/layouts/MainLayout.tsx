@@ -7,7 +7,9 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         <div className="flex flex-col min-h-screen">
             <header className="bg-[#344697] text-white p-4 flex justify-between items-center">
                 <div className="text-lg font-bold">
-                    <Link to="/">Com Conseil</Link>
+                    <Link to="/">
+                        <img src="../assets/images/com_conseil_logo.png" alt="Com Conseil" className="h-8" />
+                    </Link>
                 </div>
                 <nav className="space-x-4">
                     <Link to="/" className="hover:underline">
