@@ -1,34 +1,26 @@
 import React from 'react';
 import MainLayout from '../layouts/MainLayout';
+import { Tool } from '../types';
+
+const tools: Tool[] = [
+    { id: 1, name: 'Calculatrice TVA', description: 'Outil pour calculer la TVA.', link: '#' },
+    // Ajouter d'autres outils
+];
 
 const Tools: React.FC = () => {
     return (
         <MainLayout>
             <section className="mt-8">
-                <h2 className="text-2xl font-bold mb-4">Outils Utiles</h2>
-                <ul className="list-disc pl-6">
-                    <li>Simulateur de placement</li>
-                    <li>Calculateur d'emprunt</li>
-                    <li>Calculateur de crédit</li>
-                    <li>Calculateur de congés payés</li>
-                    {/* Ajouter plus d'outils */}
-                </ul>
-            </section>
-            <section className="mt-8">
-                <h2 className="text-2xl font-bold mb-4">FAQ</h2>
-                {/* Ajouter la FAQ */}
-            </section>
-            <section className="mt-8">
-                <h2 className="text-2xl font-bold mb-4">Sites Recommandés</h2>
-                <ul className="list-disc pl-6">
-                    <li><a href="url" className="text-blue-500 hover:underline">Site 1</a></li>
-                    <li><a href="url" className="text-blue-500 hover:underline">Site 2</a></li>
-                    {/* Ajouter plus de sites */}
-                </ul>
-            </section>
-            <section className="mt-8">
-                <h2 className="text-2xl font-bold mb-4">Échéancier de Date Comptable</h2>
-                {/* Ajouter l'échéancier */}
+                <h2 className="text-2xl font-bold mb-4">Nos Outils</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {tools.map(tool => (
+                        <div key={tool.id} className="border p-4 rounded shadow-md">
+                            <h3 className="text-xl font-bold">{tool.name}</h3>
+                            <p className="text-gray-600">{tool.description}</p>
+                            <a href={tool.link} className="text-blue-500 hover:underline">Voir plus</a>
+                        </div>
+                    ))}
+                </div>
             </section>
         </MainLayout>
     );

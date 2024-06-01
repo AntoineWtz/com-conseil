@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Skills from '../pages/Skills';
@@ -8,18 +8,20 @@ import Tools from '../pages/Tools';
 import Contact from '../pages/Contact';
 import Login from '../pages/Login';
 
-const Routes: React.FC = () => (
-    <Router>
-        <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/skills" component={Skills} />
-            <Route path="/news" component={News} />
-            <Route path="/tools" component={Tools} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/login" component={Login} />
-        </Switch>
-    </Router>
-);
+const AppRoutes: React.FC = () => {
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/skills" element={<Skills />} />
+                <Route path="/news" element={<News />} />
+                <Route path="/tools" element={<Tools />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/login" element={<Login />} />
+            </Routes>
+        </Router>
+    );
+};
 
-export default Routes;
+export default AppRoutes;
