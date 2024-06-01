@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-gray-100 text-gray-800;
+}
+
+header,
+footer {
+  @apply bg-[#344697] text-white;
+}
+
+a {
+  @apply text-[#208DB2] hover:underline;
+}
