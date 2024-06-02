@@ -4,6 +4,8 @@ import Carousel from '../components/Carousel';
 import logo2 from '../assets/images/com_conseil_logo2.jpg';
 import ContactForm from '../components/ContactForm';
 
+
+
 const Home: React.FC = () => {
     return (
         <MainLayout>
@@ -18,9 +20,9 @@ const Home: React.FC = () => {
                     <img src={logo2} alt="Com Conseil" className="h-64 m-12" />
                 </div>
                 <h3 className="text-3xl font-bold mb-4">Découvrez nos compétences</h3>
-                {/* Appel des objets Skill[] sous format cards */}
+                {/* pour chaque Skills[] enregistrés afficher le titre et l'image sous le format SkillCard */}
 
-                <h3 className="text-3xl font-bold mb-4">Actualités</h3>
+                <h3 className="text-3xl font-bold mb-4">Les actualités C&C</h3>
                 {/* Appel des objets Article[] sous format cards */}
 
                 <h3 className="text-3xl font-bold mb-4">Nous contacter</h3>

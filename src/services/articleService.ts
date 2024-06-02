@@ -11,6 +11,6 @@ export const getArticles = (): Promise<Article[]> => {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(articles);
-        }, 1000);
+        }, 500);
     });
 };

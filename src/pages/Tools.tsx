@@ -11,7 +11,7 @@ const Tools: React.FC = () => {
     return (
         <MainLayout>
             <section className="mt-8">
-                <h2 className="text-2xl font-bold mb-4">Nos Outils</h2>
+                <h2 className="text-3xl font-bold mb-4">Nos Outils</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {tools.map(tool => (
                         <div key={tool.id} className="border p-4 rounded shadow-md">
