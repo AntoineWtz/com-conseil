@@ -13,8 +13,8 @@ const Contact: React.FC = () => {
                 <h2 className="text-3xl font-bold text-blue-800">Contactez nos experts</h2>
                 <div>
                     <div className="flex flex-row justify-evenly items-center mt-8">
-                        <div className='flex flex-col items-center bg-blue-100 text-center text-blue-800 p-6 rounded-lg shadow'>
-                            <img src={logo3} alt="logo" className="w-60 h-60" />
+                        <div className='flex flex-col items-center bg-blue-100 text-center text-blue-800 p-6 rounded-lg shadow-md'>
+                            <img src={logo3} alt="logo" className="w-60 h-60 rounded" />
                             <h3 className='font-bold m-2'>Claudia PATRICIO PIRES</h3>
                             <div>
                                 <FaPhone className="inline-block mr-2" />
@@ -25,8 +25,8 @@ const Contact: React.FC = () => {
                                 <a href="mailto:" className="hover:underline">c.patriciopires@cccomconseil.com </a>
                             </div>
                         </div>
-                        <div className='flex flex-col items-center bg-blue-100 text-center text-blue-800 p-6 rounded-lg shadow'>
-                            <img src={logo3} alt="logo" className="w-60 h-60" />
+                        <div className='flex flex-col items-center bg-blue-100 text-center text-blue-800 p-6 rounded-lg shadow-md'>
+                            <img src={logo3} alt="logo" className="w-60 h-60 rounded" />
                             <h3 className='font-bold m-2'>Patrice DURAND</h3>
                             <div>
                                 <FaPhone className="inline-block mr-2" />
@@ -42,8 +42,8 @@ const Contact: React.FC = () => {
                 <h2 className="text-3xl font-bold text-blue-800 mt-8">Cabinets</h2>
                 <div>
                     <div className='flex flex-row justify-evenly p-8'>
-                        <img src={cabinet1} alt="cabinet1" className="m-4" />
-                        <img src={cabinet2} alt="cabinet2" className="m-4" />
+                        <img src={cabinet1} alt="cabinet1" className="m-4 rounded-lg shadow-md" />
+                        <img src={cabinet2} alt="cabinet2" className="m-4 rounded-lg shadow-md" />
                     </div>
                 </div>
                 <h2 className="text-3xl font-bold text-blue-800 mt-8">Nous trouver</h2>
