@@ -49,7 +49,7 @@ const ContactForm: React.FC = () => {
                 </div>
             </div>
             <div className="flex justify-center">
-                <button className="bg-[#208DB2] hover:bg-[#344697] text-white font-bold py-2 px-4 rounded" type="button">
+                <button className="bg-[#208DB2] hover:bg-[#344697] duration-200 text-white font-bold py-2 px-4 rounded" type="button">
                     Envoyer
                 </button>
             </div>
