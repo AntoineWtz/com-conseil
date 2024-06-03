@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaHome, FaInfoCircle, FaStar, FaTools, FaNewspaper, FaUserAlt, FaEnvelope, FaUserLock } from 'react-icons/fa';
+import { FaHome, FaInfoCircle, FaStar, FaTools, FaNewspaper, FaUserAlt, FaEnvelope, FaUserLock, FaFacebook, FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import logo from '../assets/images/com_conseil_logo.png';
 
@@ -36,11 +36,19 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                     </Link>
                 </nav>
             </header>
-            <main className="flex-grow container mx-auto p-4">
+            <main className="flex-grow">
                 {children}
             </main>
             <footer className="text-[#344697] p-4 text-center">
-                &copy; 2024 Com Conseil. Tous droits réservés.
+                <div className="flex justify-center space-x-4">
+                    <a href="https://www.facebook.com/profile.php?id=100057332775141" target="_blank" rel="noreferrer">
+                        <FaFacebook className="text-3xl hover:scale-105 duration-200" />
+                    </a>
+                    <a href="https://www.linkedin.com/company/c-c-com-conseil/" target="_blank" rel="noreferrer">
+                        <FaLinkedin className="text-3xl hover:scale-105 duration-200" />
+                    </a>
+                </div>
+                <div>&copy; 2024 Com Conseil. Tous droits réservés.</div>
             </footer>
         </div>
     );
