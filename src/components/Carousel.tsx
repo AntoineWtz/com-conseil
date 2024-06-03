@@ -34,8 +34,8 @@ const Carousel: React.FC = () => {
                             transition={{ duration: 1 }}
                         >
                             <img src={image.src} alt={`Carousel ${index}`} className="w-full h-full object-cover" />
-                            <div className="absolute inset-0 bg-[#344697] bg-opacity-60 flex flex-col justify-center items-center text-white">
-                                <h4 className="text-3xl font-bold">{image.title}</h4>
+                            <div className="absolute inset-0 bg-[#344697] bg-opacity-60 flex flex-col justify-center items-center text-white text-shadow">
+                                <h4 className="text-3xl font-cardo font-bold">{image.title}</h4>
                                 <p className="text-lg">{image.description}</p>
                             </div>
                         </motion.div>
