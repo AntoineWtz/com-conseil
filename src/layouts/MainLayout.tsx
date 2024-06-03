@@ -36,7 +36,7 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                     </Link>
                 </nav>
             </header>
-            <main className="flex-grow container mx-auto p-4">
+            <main className="flex-grow">
                 {children}
             </main>
             <footer className="text-[#344697] p-4 text-center">
