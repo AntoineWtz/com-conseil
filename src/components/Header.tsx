@@ -10,7 +10,7 @@ const Header = () => {
         <header className="bg-white text-[#344697] p-4 flex justify-between items-center sticky top-0 z-50 shadow-md">
             <div>
                 <Link to="/">
-                    <img src={logo} alt="Com Conseil" className="h-20" />
+                    <img src={logo} alt="Com Conseil" className="h-10 lg:h-20" />
                 </Link>
             </div>
             <div className="lg:hidden">
@@ -18,7 +18,7 @@ const Header = () => {
                     {isMenuOpen ? <FaTimes size={30} /> : <FaBars size={30} />}
                 </button>
             </div>
-            <nav className={`lg:flex lg:items-center lg:space-x-6 ${isMenuOpen ? 'fixed top-0 right-0 bg-white z-40 flex flex-col items-center space-y-4 p-4 shadow-lg mt-16' : 'hidden lg:flex'}`}>
+            <nav className={`lg:flex lg:items-center lg:space-x-6 ${isMenuOpen ? 'fixed top-0 right-0 bg-white bg-opacity-95 z-40 flex flex-col items-center space-y-4 p-4 shadow-lg mt-16' : 'hidden lg:flex'}`}>
                 <Link to="/" className="flex items-center text-lg hover:text-blue-800" onClick={() => setIsMenuOpen(false)}>
                     <FaHome className="mr-2" />Accueil
                 </Link>
