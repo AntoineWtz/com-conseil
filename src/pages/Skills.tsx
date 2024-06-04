@@ -22,7 +22,7 @@ const Skills: React.FC = () => {
             <section className="mt-8">
                 <h2 className="text-4xl text-[#344697] font-bold m-8 text-center">Nos Compétences</h2>
                 <p className='m-12 text-xl text-center'>Nos équipes vous accompagnent dans de nombreux domaines d'expertise. <br />Nos compétences variées vous permettent d'avoir un interlocuteur unique, engagé à vos côtés.</p>
-                <div className="flex justify-evenly gap-4 p-8">
+                <div className="flex flex-wrap lg:flex-nowrap justify-evenly gap-4 p-4">
                     {loadingSkills ? (
                         <p>Chargement des compétences...</p>
                     ) : (
