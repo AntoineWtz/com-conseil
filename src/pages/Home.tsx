@@ -31,17 +31,18 @@ const Home: React.FC = () => {
         <MainLayout>
             <Carousel />
             <section className="mt-8 mb-8 px-4 flex flex-col items-center">
-                <h2 className="text-4xl font-cardo text-[#344697] font-bold mb-4">Bienvenue chez C&C Com'Conseil</h2>
+                <h2 className="text-4xl font-cardo text-[#344697] font-bold mb-4 text-center">Bienvenue chez C&C Com'Conseil</h2>
                 <div className="flex flex-col lg:flex-row justify-evenly items-center mb-8">
-                    <p className="mt-12 text-lg lg:w-1/2 text-center lg:text-left">Le cabinet C&C Com' Conseil est une société d'expertise comptable implantée à Milly la Forêt, dans l'Essonne en région île de France. Nous sommes inscrits à l'ordre des experts comptables.<br /><br />
+                    <p className="mt-12 text-lg lg:w-1/2 text-center lg:text-left">
+                        Le cabinet C&C Com' Conseil est une société d'expertise comptable implantée à Milly la Forêt, dans l'Essonne en région île de France. Nous sommes inscrits à l'ordre des experts comptables.<br /><br />
                         Le cabinet est administré par Claudia Patricio Pires et Cyril Herbillon, accompagnés par une équipe de collaborateurs à votre écoute pour vous conseiller, vous développer et vous organiser en matière comptable, fiscale, juridique et sociale.<br /><br />
                         La priorité de notre cabinet : être au plus proche de vous et vos attentes dans les missions que vous nous confirez !<br /><br />
                         À très vite chez C&C Com' Conseil !
                     </p>
                     <img src={logo2} alt="Com Conseil" className="h-64 m-12" />
                 </div>
-                <h3 className="text-3xl font-cardo text-[#344697] font-bold mb-4">Découvrez nos compétences</h3>
-                <div className="flex flex-wrap lg:flex-nowrap justify-evenly gap-4 p-4">
+                <h3 className="text-3xl font-cardo text-[#344697] font-bold mb-4 text-center">Découvrez nos compétences</h3>
+                <div className="flex flex-wrap justify-center gap-4 p-4">
                     {loadingSkills ? (
                         <p>Chargement des compétences...</p>
                     ) : (
@@ -55,7 +56,7 @@ const Home: React.FC = () => {
                         ))
                     )}
                 </div>
-                <h3 className="text-3xl font-cardo text-[#344697] font-bold mb-8 mt-8">Les actualités C&C</h3>
+                <h3 className="text-3xl font-cardo text-[#344697] font-bold mb-8 mt-8 text-center">Les actualités C&C</h3>
                 <div className="flex flex-wrap justify-center gap-4">
                     {loadingArticles ? (
                         <p>Chargement des articles...</p>
@@ -70,7 +71,7 @@ const Home: React.FC = () => {
                         ))
                     )}
                 </div>
-                <h3 className="text-3xl font-cardo text-[#344697] font-bold mb-4 mt-8">Nous contacter</h3>
+                <h3 className="text-3xl font-cardo text-[#344697] font-bold mb-4 mt-8 text-center">Nous contacter</h3>
                 <ContactForm />
             </section>
         </MainLayout>
