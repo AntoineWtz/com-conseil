@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaHome, FaInfoCircle, FaStar, FaTools, FaNewspaper, FaUserAlt, FaEnvelope, FaUserLock, FaFacebook, FaLinkedin } from 'react-icons/fa';
+import { FaHome, FaInfoCircle, FaStar, FaTools, FaNewspaper, FaEnvelope, FaUserLock, FaFacebook, FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import logo from '../assets/images/com_conseil_logo.png';
 

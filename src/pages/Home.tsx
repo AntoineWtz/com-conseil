@@ -41,7 +41,7 @@ const Home: React.FC = () => {
                     <img src={logo2} alt="Com Conseil" className="h-64 m-12" />
                 </div>
                 <h3 className="text-3xl font-cardo text-[#344697] font-bold mb-4">Découvrez nos compétences</h3>
-                <div className="flex justify-evenly gap-4 p-4">
+                <div className="flex flex-row justify-evenly gap-4 p-4">
                     {loadingSkills ? (
                         <p>Chargement des compétences...</p>
                     ) : (
@@ -55,7 +55,7 @@ const Home: React.FC = () => {
                         ))
                     )}
                 </div>
-                <h3 className="text-3xl font-cardo text-[#344697] font-bold mb-4 mt-8">Les actualités C&C</h3>
+                <h3 className="text-3xl font-cardo text-[#344697] font-bold mb-8 mt-8">Les actualités C&C</h3>
                 <div className="flex flex-wrap justify-center gap-4">
                     {loadingArticles ? (
                         <p>Chargement des articles...</p>
