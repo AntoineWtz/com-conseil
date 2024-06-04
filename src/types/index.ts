@@ -5,6 +5,7 @@ export interface Article {
     author: string;
     publishedDate: string;
     category: string;
+    imageUri: string;
 }
 
 export interface Tool {
