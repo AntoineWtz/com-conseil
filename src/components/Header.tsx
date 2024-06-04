@@ -18,26 +18,26 @@ const Header = () => {
                     {isMenuOpen ? <FaTimes size={30} /> : <FaBars size={30} />}
                 </button>
             </div>
-            <nav className={`lg:flex lg:items-center lg:space-x-6 ${isMenuOpen ? 'fixed top-0 right-0 bg-white bg-opacity-95 z-40 flex flex-col items-center space-y-4 p-4 shadow-lg mt-16' : 'hidden lg:flex'}`}>
-                <Link to="/" className="flex items-center text-lg hover:text-blue-800" onClick={() => setIsMenuOpen(false)}>
+            <nav className={`lg:flex lg:items-center lg:space-x-12 ${isMenuOpen ? 'fixed top-0 right-0 bg-white bg-opacity-95 z-40 flex flex-col items-center space-y-4 p-4 shadow-lg mt-16' : 'hidden lg:flex'}`}>
+                <Link to="/" className="flex items-center text-lg hover:text-[#208DB2] duration-200" onClick={() => setIsMenuOpen(false)}>
                     <FaHome className="mr-2" />Accueil
                 </Link>
-                <Link to="/about" className="flex items-center text-lg hover:text-blue-800" onClick={() => setIsMenuOpen(false)}>
+                <Link to="/about" className="flex items-center text-lg hover:text-[#208DB2] duration-200" onClick={() => setIsMenuOpen(false)}>
                     <FaHeart className="mr-2" />Notre ADN
                 </Link>
-                <Link to="/skills" className="flex items-center text-lg hover:text-blue-800" onClick={() => setIsMenuOpen(false)}>
+                <Link to="/skills" className="flex items-center text-lg hover:text-[#208DB2] duration-200" onClick={() => setIsMenuOpen(false)}>
                     <FaStar className="mr-2" />Nos Compétences
                 </Link>
-                <Link to="/tools" className="flex items-center text-lg hover:text-blue-800" onClick={() => setIsMenuOpen(false)}>
+                <Link to="/tools" className="flex items-center text-lg hover:text-[#208DB2] duration-200" onClick={() => setIsMenuOpen(false)}>
                     <FaTools className="mr-2" />Outils
                 </Link>
-                <Link to="/news" className="flex items-center text-lg hover:text-blue-800" onClick={() => setIsMenuOpen(false)}>
+                <Link to="/news" className="flex items-center text-lg hover:text-[#208DB2] duration-200" onClick={() => setIsMenuOpen(false)}>
                     <FaNewspaper className="mr-2" />Actualités
                 </Link>
-                <Link to="/contact" className="flex items-center text-lg hover:text-blue-800" onClick={() => setIsMenuOpen(false)}>
+                <Link to="/contact" className="flex items-center text-lg hover:text-[#208DB2] duration-200" onClick={() => setIsMenuOpen(false)}>
                     <FaEnvelope className="mr-2" />Contact
                 </Link>
-                <Link to="/client-space" className="flex items-center text-lg hover:text-blue-800" onClick={() => setIsMenuOpen(false)}>
+                <Link to="/client-space" className="flex items-center text-white text-lg bg-[#344697] px-4 py-2 rounded-xl hover:bg-[#208DB2] duration-200" onClick={() => setIsMenuOpen(false)}>
                     <FaUser className="mr-2" />Espace Client
                 </Link>
             </nav>

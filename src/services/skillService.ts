@@ -12,7 +12,7 @@ const skills: Skill[] = [
     { id: 3, name: 'Ressources humaines', description: 'Gestion complète de votre comptabilité.', imageUri: skill3 },
     { id: 4, name: 'Transmission d\'entreprise', description: 'Gestion complète de votre comptabilité.', imageUri: skill4 },
     { id: 5, name: 'Fiscalité personnelle', description: 'Gestion complète de votre comptabilité.', imageUri: skill5 },
-    { id: 6, name: 'Conseil en gestion de patrimoine', description: 'Gestion complète de votre comptabilité.', imageUri: skill6 },
+    { id: 6, name: 'Conseil en patrimoine', description: 'Gestion complète de votre comptabilité.', imageUri: skill6 },
 ];
 
 export const getSkills = (): Promise<Skill[]> => {
