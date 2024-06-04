@@ -9,8 +9,8 @@ import cabinet2 from '../assets/images/cabinet2.jpg';
 const Contact: React.FC = () => {
     return (
         <MainLayout>
-            <section className="mt-8">
-                <h2 className="text-3xl font-bold text-blue-800">Contactez nos experts</h2>
+            <section className="mt-8 mb-8">
+                <h2 className="text-3xl font-bold text-blue-800 text-center">Contactez nos experts</h2>
                 <div>
                     <div className="flex flex-row justify-evenly items-center mt-8">
                         <div className='flex flex-col items-center bg-blue-100 text-center text-blue-800 p-6 rounded-lg shadow-md'>
@@ -27,30 +27,30 @@ const Contact: React.FC = () => {
                         </div>
                         <div className='flex flex-col items-center bg-blue-100 text-center text-blue-800 p-6 rounded-lg shadow-md'>
                             <img src={logo3} alt="logo" className="w-60 h-60 rounded" />
-                            <h3 className='font-bold m-2'>Patrice DURAND</h3>
+                            <h3 className='font-bold m-2'>Cyril Herbillon</h3>
                             <div>
                                 <FaPhone className="inline-block mr-2" />
                                 <a href="tel:+330184180980">01 84 18 09 80</a>
                             </div>
                             <div>
                                 <FaEnvelope className="inline-block mr-2" />
-                                <a href="mailto:" className="hover:underline">p.durand@exemple.com </a>
+                                <a href="mailto:" className="hover:underline">c.herbillon@cccomconseil.com </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <h2 className="text-3xl font-bold text-blue-800 mt-8">Cabinets</h2>
+                <h2 className="text-3xl font-bold text-blue-800 mt-16 text-center">Cabinets</h2>
                 <div>
                     <div className='flex flex-row justify-evenly p-8'>
                         <img src={cabinet1} alt="cabinet1" className="m-4 rounded-lg shadow-md" />
                         <img src={cabinet2} alt="cabinet2" className="m-4 rounded-lg shadow-md" />
                     </div>
                 </div>
-                <h2 className="text-3xl font-bold text-blue-800 mt-8">Nous trouver</h2>
+                <h2 className="text-3xl font-bold text-blue-800 mt-8 text-center">Nous trouver</h2>
                 <div>
 
                 </div>
-                <h2 className="text-3xl font-bold text-blue-800 mt-8">Formulaire</h2>
+                <h2 className="text-3xl font-bold text-blue-800 mt-8 text-center">Formulaire</h2>
                 <ContactForm />
             </section>
         </MainLayout>

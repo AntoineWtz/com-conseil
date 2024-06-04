@@ -30,7 +30,7 @@ const Home: React.FC = () => {
     return (
         <MainLayout>
             <Carousel />
-            <section className="mt-8 px-4 flex flex-col items-center">
+            <section className="mt-8 mb-8 px-4 flex flex-col items-center">
                 <h2 className="text-4xl font-cardo text-[#344697] font-bold mb-4">Bienvenue chez C&C Com'Conseil</h2>
                 <div className="flex flex-col lg:flex-row justify-evenly items-center mb-8">
                     <p className="mt-12 text-lg lg:w-1/2 text-center lg:text-left">Le cabinet C&C Com' Conseil est une société d'expertise comptable implantée à Milly la Forêt, dans l'Essonne en région île de France. Nous sommes inscrits à l'ordre des experts comptables.<br /><br />
@@ -41,7 +41,7 @@ const Home: React.FC = () => {
                     <img src={logo2} alt="Com Conseil" className="h-64 m-12" />
                 </div>
                 <h3 className="text-3xl font-cardo text-[#344697] font-bold mb-4">Découvrez nos compétences</h3>
-                <div className="flex flex-row justify-evenly gap-4 p-4">
+                <div className="flex flex-wrap lg:flex-nowrap justify-evenly gap-4 p-4">
                     {loadingSkills ? (
                         <p>Chargement des compétences...</p>
                     ) : (

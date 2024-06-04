@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaHome, FaInfoCircle, FaStar, FaTools, FaNewspaper, FaEnvelope, FaUserLock, FaFacebook, FaLinkedin } from 'react-icons/fa';
+import { FaHome, FaInfoCircle, FaStar, FaTools, FaNewspaper, FaEnvelope, FaUserLock, FaFacebook, FaLinkedin, FaPhone } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import logo from '../assets/images/com_conseil_logo.png';
 
@@ -39,14 +39,26 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             <main className="flex-grow">
                 {children}
             </main>
-            <footer className="text-[#344697] p-4 text-center">
-                <div className="flex justify-center space-x-4">
+            <footer className="bg-[#344697] text-white p-8 text-center">
+                <div className="flex justify-center space-x-4 m-4">
                     <a href="https://www.facebook.com/profile.php?id=100057332775141" target="_blank" rel="noreferrer">
                         <FaFacebook className="text-3xl hover:scale-105 duration-200" />
                     </a>
                     <a href="https://www.linkedin.com/company/c-c-com-conseil/" target="_blank" rel="noreferrer">
                         <FaLinkedin className="text-3xl hover:scale-105 duration-200" />
                     </a>
+                </div>
+                <div>
+                    <p>C&C Com Conseil</p>
+                    <p>7 rue du Camp Romain</p>
+                    <div>
+                        <FaPhone className="inline-block mr-2" />
+                        <a href="tel:+330184180980">01 84 18 09 80</a>
+                    </div>
+                    <div>
+                        <FaEnvelope className="inline-block mr-2" />
+                        <a href="mailto:" className="hover:underline">cabinet@cccomconseil.com </a>
+                    </div>
                 </div>
                 <div>&copy; 2024 Com Conseil. Tous droits réservés.</div>
             </footer>
