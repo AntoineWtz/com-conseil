@@ -49,6 +49,7 @@ const Home: React.FC = () => {
                         skills.map(skill => (
                             <SkillCard
                                 key={skill.id}
+                                id={skill.id}
                                 title={skill.name}
                                 description={skill.description}
                                 imageUrl={skill.imageUri || ''}
