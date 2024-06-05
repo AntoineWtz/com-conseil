@@ -7,6 +7,7 @@ import News from '../pages/News';
 import Tools from '../pages/Tools';
 import Contact from '../pages/Contact';
 import Login from '../pages/Login';
+import SkillDetail from '../pages/SkillDetail';
 
 const AppRoutes: React.FC = () => {
     return (
@@ -19,6 +20,7 @@ const AppRoutes: React.FC = () => {
                 <Route path="/tools" element={<Tools />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/login" element={<Login />} />
+                <Route path="/skill/:skillId" element={<SkillDetail />} />
             </Routes>
         </Router>
     );
