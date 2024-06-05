@@ -20,4 +20,5 @@ export interface Skill {
     name: string;
     description: string;
     imageUri: string;
+    missions?: string[];
 }

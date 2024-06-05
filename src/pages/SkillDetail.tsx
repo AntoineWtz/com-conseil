@@ -40,9 +40,16 @@ const SkillDetail: React.FC = () => {
     return (
         <MainLayout>
             <div className="flex flex-col items-center mt-8">
-                <h2 className="text-4xl font-bold text-[#344697] mb-4">{skill.name}</h2>
-                <img className="w-full h-64 object-cover mb-4" src={skill.imageUri} alt={skill.name} />
-                <p className="text-lg text-center">{skill.description}</p>
+                <img className="w-full h-36 lg:h-48 opacity-60 object-cover mb-4" src={skill.imageUri} alt={skill.name} />
+                <h2 className="text-2xl lg:text-4xl font-bold text-[#344697] mb-4 text-center">{skill.name}</h2>
+                <h3 className="text-xl lg:text-2xl font-semibold mt-4 mb-2">Présentation</h3>
+                <p className="lg:text-lg text-justify w-2/3">{skill.description}</p>
+                <h3 className="text-xl lg:text-2xl font-semibold mt-8 mb-2">Nos missions</h3>
+                <ul className="list-disc list-inside lg:w-2/3">
+                    {skill.missions?.map((mission, index) => (
+                        <li key={index} className="lg:text-lg mb-2">{mission}</li>
+                    ))}
+                </ul>
             </div>
         </MainLayout>
     );
