@@ -7,7 +7,7 @@ const About: React.FC = () => {
     return (
         <MainLayout>
             <section className="mt-12 px-4">
-                <h2 className="text-4xl text-[#344697] font-bold text-center">Notre ADN</h2>
+                <h2 className="text-4xl font-cardo text-[#344697] font-bold text-center">Notre ADN</h2>
                 <div className='flex flex-col lg:flex-row justify-evenly items-center'>
                     <p className='mt-12 text-justify lg:text-lg lg:w-1/2  lg:text-left'>
                         « Notre souhait est de créer le cabinet de demain et d’apporter une qualité de services et une réactivité accrues à vos besoins.<br /><br />
@@ -17,7 +17,7 @@ const About: React.FC = () => {
                     </p>
                     <img src={logo2} alt="logo2" className="lg:h-64 lg:m-12 h-0" />
                 </div>
-                <h3 className="text-2xl lg:text-3xl text-[#344697] font-bold mt-12 mb-12 lg:m-20 text-center">Mise à disposition d'une plateforme collaborative</h3>
+                <h3 className="text-2xl lg:text-3xl font-cardo text-[#344697] font-bold mt-12 mb-12 lg:m-20 text-center">Mise à disposition d'une plateforme collaborative</h3>
                 <div className="relative pt-[40%] h-0">
                     <iframe
                         className="absolute top-0 left-0 w-full lg:h-full aspect-video rounded-xl"
@@ -27,7 +27,7 @@ const About: React.FC = () => {
                     </iframe>
                 </div>
                 <div className='mt-24'>
-                    <p className="text-2xl lg:text-3xl text-[#344697] font-bold lg:m-20 text-center mb-12">L'équipe C&C Com' Conseil</p>
+                    <p className="text-2xl lg:text-3xl font-cardo text-[#344697] font-bold lg:m-20 text-center mb-12">L'équipe C&C Com' Conseil</p>
                     <div className="flex flex-col md:flex-row justify-evenly items-center">
                         <div className='flex flex-col items-center bg-blue-100 text-center text-blue-800 p-6 rounded-lg shadow-md mb-12'>
                             <img src={logo3} alt="logo" className="w-60 h-60 rounded" />
