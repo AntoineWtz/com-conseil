@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { getSkills } from '../services/skillService';
 import { Skill } from '../types';
 import MainLayout from '../layouts/MainLayout';
+import ContactForm from '../components/ContactForm';
 
 const SkillDetail: React.FC = () => {
     const { skillId } = useParams<{ skillId: string }>();
@@ -51,7 +52,12 @@ const SkillDetail: React.FC = () => {
                     ))}
                 </ul>
             </div>
+            <h3 className="text-2xl lg:text-3xl font-cardo text-[#344697] font-bold mt-20 text-center">Nous contacter</h3>
+            <div className='m-4'>
+                <ContactForm />
+            </div>
         </MainLayout>
+
     );
 };
 
