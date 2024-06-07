@@ -1,4 +1,8 @@
 import { Article } from '../types';
+import article1 from '../assets/images/article1.jpeg';
+import article2 from '../assets/images/article2.jpeg';
+import article3 from '../assets/images/article3.jpeg';
+import article4 from '../assets/images/article4.jpeg';
 
 const articles: Article[] = [
     {
@@ -8,7 +12,7 @@ const articles: Article[] = [
         author: 'Admin',
         publishedDate: '2024-06-01',
         category: 'Réglementation',
-        imageUri: '#'
+        imageUri: article1
     },
     {
         id: 2,
@@ -17,25 +21,61 @@ const articles: Article[] = [
         author: 'Admin',
         publishedDate: '2024-06-02',
         category: 'Fonctionnalité',
-        imageUri: '#'
+        imageUri: article2
     },
     {
         id: 3,
-        title: 'Nouveau Partenaire',
-        content: 'Détails sur le nouveau partenaire...',
+        title: 'Quand l’administration fiscale commet une erreur dans une mise en demeure…',
+        content: 'Une erreur de plume dans une mise en demeure envoyée par l’administration fiscale ne remet pas en cause l’application de la majoration pour défaut de souscription de la déclaration de revenus. Les contribuables qui ne souscrivent pas leurs déclarations fiscales peuvent être sanctionnés par l’application de l’intérêt de retard et d’une majoration de l’impôt dû. Cette majoration étant fixée à 40 % lorsque la déclaration n’a pas été déposée dans les 30 jours suivant la réception d’une mise en demeure. Sachant que l’administration fiscale indique dans cette mise en demeure un certain nombre d’informations, notamment la déclaration dont la souscription est demandée et sa date limite de dépôt. À ce titre, dans une affaire récente, un entrepreneur individuel avait fait l’objet d’un redressement fiscal, assorti, notamment, de la majoration de 40 % au motif qu’il n’avait pas souscrit de déclaration d’ensemble de ses revenus dans les 30 jours suivant la mise en demeure qui lui avait été adressée. Une majoration qu’il avait contestée dans la mesure où, selon lui, la mise en demeure était irrégulière en raison d’une erreur sur la date limite de souscription, la date mentionnée étant celle de la déclaration des bénéfices industriels et commerciaux et non celle de la déclaration d’ensemble des revenus. Mais le Conseil d’État ne lui a pas donné raison. Pour les juges, l’objet de la mise en demeure était sans ambiguïté puisqu’elle mentionnait expressément la déclaration concernée, à savoir la déclaration d’ensemble des revenus. En conséquence, une faute dans la date limite de souscription ne constituait qu’une simple erreur de plume. La mise en demeure étant régulière, la majoration pouvait donc s’appliquer.',
         author: 'Admin',
-        publishedDate: '2024-06-03',
-        category: 'Partenaire',
-        imageUri: '#'
+        publishedDate: '2024-06-06',
+        category: 'Actualité',
+        imageUri: article3
     },
     {
         id: 4,
-        title: 'Nouveau Produit',
-        content: 'Détails sur le nouveau produit...',
+        title: 'Assurez-vous que la démission de votre salarié est sans équivoque !',
+        content: 'La lettre de démission qui contient la seule signature du salarié, car rédigée et adressée à l’employeur par son épouse, ne manifeste pas sa volonté claire et non équivoque de mettre fin à son contrat de travail. Le salarié qui souhaite démissionner de son poste de travail doit en informer son employeur, idéalement par lettre recommandée avec accusé de réception. Mais attention, cette démission ne doit pas être prise en compte par l’employeur si elle ne manifeste pas la volonté claire et non équivoque du salarié de quitter son emploi. Et ce, sous peine de voir la rupture du contrat de travail requalifiée par les juges en licenciement sans cause réelle et sérieuse. À ce titre, une affaire récente, et pour le moins étonnante, ne doit pas manquer d’attirer l’attention des employeurs sur l’intérêt de s’assurer de la « réelle » intention du salarié de démissionner. C’est ainsi qu’un employeur avait reçu une lettre de démission (sans préavis) de l’un de ses salariés engagé en tant que magasinier-opérateur mécanique. Un salarié qui, quelques temps après, avait demandé à son employeur de le réintégrer dans l’entreprise en indiquant qu’il n’avait pas souhaité démissionner. Ce que son employeur avait refusé. Aussi, le salarié avait saisi la justice afin d’obtenir la requalification de sa démission en licenciement sans cause réelle et sérieuse. Pour justifier sa demande, le salarié avait expliqué avoir, à la suite de son incarcération, transmis à son épouse une lettre vierge comportant sa signature afin qu’elle justifie de son absence auprès de son employeur. Mais qu’en raison d’un malentendu, cette dernière avait rédigé une lettre de démission et l’avait adressée à l’employeur de son époux. Saisie du litige, la Cour d’appel de Versailles n’avait pas donné foi aux arguments du salarié. Elle avait estimé, notamment, qu’aucun élément ne permettait de démontrer que l’épouse en question avait mal compris les intentions du salarié. Et elle en avait conclu que la démission était donc valable. Mais pour la Cour de cassation, la lettre de démission, qui ne comportait que la seule signature du salarié et avait été rédigée par son épouse, ne manifestait pas sa volonté claire et non équivoque de démissionner. L’affaire est donc renvoyée devant les juges d’appel.',
         author: 'Admin',
-        publishedDate: '2024-06-04',
-        category: 'Produit',
-        imageUri: '#'
+        publishedDate: '2024-05-31',
+        category: 'Social',
+        imageUri: article4
+    },
+    {
+        id: 5,
+        title: 'Quand un directeur RH cache sa relation sentimentale avec une représentante syndicale…',
+        content: 'Un directeur chargé de la gestion des ressources humaines qui cache à son employeur la relation amoureuse qu’il entretient avec une salarié titulaire de mandats syndicaux et de représentation du personnel dans l’entreprise manque à son obligation de loyauté et peut, à ce titre, être licencié pour faute grave. Un salarié ne peut pas, en principe, faire l’objet d’un licenciement disciplinaire en raison d’un motif tiré de sa vie personnelle, sauf s’il constitue un manquement à une obligation découlant de son contrat de travail. Ainsi, dans une affaire récente, un employeur avait licencié pour faute grave un salarié occupant un poste de direction au motif qu’il lui avait caché la relation amoureuse qu’il entretenait avec une salariée exerçant des mandats syndicaux et de représentation du personnel dans l’entreprise. Estimant que cette relation relevait de sa vie privée, le salarié avait contesté son licenciement en justice. Mais la Cour de cassation a confirmé son licenciement. En effet, elle a relevé que le salarié était chargé de la gestion des ressources humaines, qu’il avait reçu plusieurs délégations de pouvoirs de son employeur en matière d’hygiène, de sécurité et d’organisation du travail en plus de présider, à sa place et de manière permanente, les institutions représentatives du personnel. Or, il avait caché à son employeur une relation amoureuse de plusieurs années avec une salariée, titulaire de mandats de représentation syndicale et de représentation du personnel, qui s’était investie dans des mouvements de grève et d’occupation d’un établissement de l’entreprise, qui avait contesté la mise en œuvre d’un projet de réduction d’effectifs et qui avait participé à plusieurs réunions présidées par le salarié licencié et au cours desquelles des sujets sensibles relatifs à des plans sociaux avaient été discutés. Pour la Cour de cassation, en cachant à son employeur cette relation qui était en rapport avec ses fonctions professionnelles et de nature à en affecter le bon exercice, le salarié avait manqué à son obligation de loyauté. Dès lors, l’employeur pouvait le licencier pour faute grave. ',
+        author: 'Admin',
+        publishedDate: '2024-06-01',
+        category: 'Réglementation',
+        imageUri: article1
+    },
+    {
+        id: 6,
+        title: 'Qui peut signer un plan de sauvegarde de l’emploi dans une association ?',
+        content: 'Dans une association, le plan de sauvegarde de l’emploi signé par un organe incompétent peut être valablement régularisé par la validation ultérieure de l’organe compétent. Les associations d’au moins 50 salariés qui envisagent de licencier pour motif économique au moins 10 salariés sur une période de 30 jours doivent mettre en place un plan de sauvegarde de l’emploi (PSE). Le PSE peut être négocié dans le cadre d’un accord collectif conclu entre l’employeur et un syndicat représentatif. Il fait ensuite l’objet d’une validation par l’administration du travail. Dans une affaire récente, le PSE d’une association avait été conclu dans le cadre d’un accord collectif signé par sa directrice générale. Ce plan avait ensuite été validé par le directeur régional et interdépartemental de l’économie, de l’emploi, du travail et des solidarités (DRIEETS). Plusieurs salariés de l’association avaient contesté en justice la décision administrative validant le PSE. Ils soutenaient notamment que la directrice générale de l’association était dépourvue de qualité pour signer le PSE au nom de l’association. En effet, selon ses statuts, la directrice générale ne pouvait engager l’association qu’à hauteur de 300 000 €. Les dépenses supérieures à ce montant devant être autorisées par le comité exécutif. Pour les salariés, le PSE, dont le coût s’élevait à 2,8 millions d’euros, aurait donc dû être signé par le comité exécutif et non pas par la directrice générale. Saisi de ce litige, le Conseil d’État a considéré que le PSE était valide. Pour en arriver à cette conclusion, il a constaté que le comité exécutif avait ratifié l’accord collectif signé par la directrice générale. Le fait que cette délibération intervienne 6 mois après la signature de l’accord et sa validation par la DRIEETS ne remettait pas en cause cette régularisation.',
+        author: 'Admin',
+        publishedDate: '2024-06-02',
+        category: 'Fonctionnalité',
+        imageUri: article2
+    },
+    {
+        id: 7,
+        title: 'Quand l’administration fiscale commet une erreur dans une mise en demeure…',
+        content: 'Une erreur de plume dans une mise en demeure envoyée par l’administration fiscale ne remet pas en cause l’application de la majoration pour défaut de souscription de la déclaration de revenus. Les contribuables qui ne souscrivent pas leurs déclarations fiscales peuvent être sanctionnés par l’application de l’intérêt de retard et d’une majoration de l’impôt dû. Cette majoration étant fixée à 40 % lorsque la déclaration n’a pas été déposée dans les 30 jours suivant la réception d’une mise en demeure. Sachant que l’administration fiscale indique dans cette mise en demeure un certain nombre d’informations, notamment la déclaration dont la souscription est demandée et sa date limite de dépôt. À ce titre, dans une affaire récente, un entrepreneur individuel avait fait l’objet d’un redressement fiscal, assorti, notamment, de la majoration de 40 % au motif qu’il n’avait pas souscrit de déclaration d’ensemble de ses revenus dans les 30 jours suivant la mise en demeure qui lui avait été adressée. Une majoration qu’il avait contestée dans la mesure où, selon lui, la mise en demeure était irrégulière en raison d’une erreur sur la date limite de souscription, la date mentionnée étant celle de la déclaration des bénéfices industriels et commerciaux et non celle de la déclaration d’ensemble des revenus. Mais le Conseil d’État ne lui a pas donné raison. Pour les juges, l’objet de la mise en demeure était sans ambiguïté puisqu’elle mentionnait expressément la déclaration concernée, à savoir la déclaration d’ensemble des revenus. En conséquence, une faute dans la date limite de souscription ne constituait qu’une simple erreur de plume. La mise en demeure étant régulière, la majoration pouvait donc s’appliquer.',
+        author: 'Admin',
+        publishedDate: '2024-06-06',
+        category: 'Actualité',
+        imageUri: article3
+    },
+    {
+        id: 8,
+        title: 'Assurez-vous que la démission de votre salarié est sans équivoque !',
+        content: 'La lettre de démission qui contient la seule signature du salarié, car rédigée et adressée à l’employeur par son épouse, ne manifeste pas sa volonté claire et non équivoque de mettre fin à son contrat de travail. Le salarié qui souhaite démissionner de son poste de travail doit en informer son employeur, idéalement par lettre recommandée avec accusé de réception. Mais attention, cette démission ne doit pas être prise en compte par l’employeur si elle ne manifeste pas la volonté claire et non équivoque du salarié de quitter son emploi. Et ce, sous peine de voir la rupture du contrat de travail requalifiée par les juges en licenciement sans cause réelle et sérieuse. À ce titre, une affaire récente, et pour le moins étonnante, ne doit pas manquer d’attirer l’attention des employeurs sur l’intérêt de s’assurer de la « réelle » intention du salarié de démissionner. C’est ainsi qu’un employeur avait reçu une lettre de démission (sans préavis) de l’un de ses salariés engagé en tant que magasinier-opérateur mécanique. Un salarié qui, quelques temps après, avait demandé à son employeur de le réintégrer dans l’entreprise en indiquant qu’il n’avait pas souhaité démissionner. Ce que son employeur avait refusé. Aussi, le salarié avait saisi la justice afin d’obtenir la requalification de sa démission en licenciement sans cause réelle et sérieuse. Pour justifier sa demande, le salarié avait expliqué avoir, à la suite de son incarcération, transmis à son épouse une lettre vierge comportant sa signature afin qu’elle justifie de son absence auprès de son employeur. Mais qu’en raison d’un malentendu, cette dernière avait rédigé une lettre de démission et l’avait adressée à l’employeur de son époux. Saisie du litige, la Cour d’appel de Versailles n’avait pas donné foi aux arguments du salarié. Elle avait estimé, notamment, qu’aucun élément ne permettait de démontrer que l’épouse en question avait mal compris les intentions du salarié. Et elle en avait conclu que la démission était donc valable. Mais pour la Cour de cassation, la lettre de démission, qui ne comportait que la seule signature du salarié et avait été rédigée par son épouse, ne manifestait pas sa volonté claire et non équivoque de démissionner. L’affaire est donc renvoyée devant les juges d’appel.',
+        author: 'Admin',
+        publishedDate: '2024-05-31',
+        category: 'Social',
+        imageUri: article4
     },
 ];
 
