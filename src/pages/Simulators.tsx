@@ -60,7 +60,7 @@ const Simulators: React.FC = () => {
                         {categories.map(category => (
                             <li
                                 key={category}
-                                className={`font-bold text-xs lg:text-base cursor-pointer mb-2 px-4 py-2 rounded-full flex items-center space-x-2 ${selectedCategory === category ? 'bg-[#344697] text-white' : ''} text-[#344697] hover:bg-blue-200 transition-colors duration-300`}
+                                className={`font-bold text-sm lg:text-base cursor-pointer mb-2 px-4 py-2 rounded-full flex items-center space-x-2 ${selectedCategory === category ? 'bg-[#344697] text-white' : ''} text-[#344697] hover:bg-blue-200 transition-colors duration-300`}
                                 onClick={() => handleCategoryChange(category)}
                             >
                                 {categoryIcons[category]}
