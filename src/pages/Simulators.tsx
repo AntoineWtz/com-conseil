@@ -3,24 +3,43 @@ import MainLayout from '../layouts/MainLayout';
 import { getSimulators, getCategories } from '../services/simulatorService';
 import { Simulator } from '../types';
 import SimulatorCard from '../components/SimulatorCard';
+import { FaTh, FaMoneyBillWave, FaChartBar, FaCreditCard, FaCalendarAlt, FaWrench } from 'react-icons/fa';
 
 const Simulators: React.FC = () => {
     const [simulators, setSimulators] = useState<Simulator[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
     const [categories, setCategories] = useState<string[]>([]);
-    const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+    const [selectedCategory, setSelectedCategory] = useState<string | null>('Tous');
+    const [fade, setFade] = useState<boolean>(false);
 
     useEffect(() => {
         Promise.all([getSimulators(), getCategories()]).then(([simulatorData, categoryData]) => {
             setSimulators(simulatorData);
-            setCategories(categoryData);
+            setCategories(['Tous', ...categoryData]);
             setLoading(false);
         });
     }, []);
 
-    const filteredSimulators = selectedCategory
+    const handleCategoryChange = (category: string) => {
+        setFade(true);
+        setTimeout(() => {
+            setSelectedCategory(category);
+            setFade(false);
+        }, 300); 
+    };
+
+    const filteredSimulators = selectedCategory && selectedCategory !== 'Tous'
         ? simulators.filter(sim => sim.category === selectedCategory)
         : simulators;
+
+    const categoryIcons: { [key: string]: JSX.Element } = {
+        'Tous': <FaTh />,
+        'Placement': <FaMoneyBillWave />,
+        'Emprunts': <FaChartBar />,
+        'Crédit-Bail': <FaCreditCard />,
+        'Congés payés': <FaCalendarAlt />,
+        'Autres': <FaWrench />
+    };
 
     if (loading) {
         return (
@@ -35,21 +54,22 @@ const Simulators: React.FC = () => {
     return (
         <MainLayout>
             <section className="mt-8">
-                <h2 className="text-3xl font-bold mb-4 text-center">Nos Simulateurs</h2>
-                <nav className="flex justify-center mb-8">
-                    <ul className="flex space-x-4">
+                <h2 className="text-3xl font-cardo text-[#344697] font-bold mb-4 text-center">Nos Simulateurs</h2>
+                <nav className="flex flex-wrap justify-center mt-8 mb-8">
+                    <ul className="flex flex-wrap justify-center space-x-2">
                         {categories.map(category => (
                             <li
                                 key={category}
-                                className={`cursor-pointer px-4 py-2 rounded ${selectedCategory === category ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
-                                onClick={() => setSelectedCategory(category)}
+                                className={`font-bold text-xs lg:text-base cursor-pointer mb-2 px-4 py-2 rounded-full flex items-center space-x-2 ${selectedCategory === category ? 'bg-[#344697] text-white' : ''} text-[#344697] hover:bg-blue-200 transition-colors duration-300`}
+                                onClick={() => handleCategoryChange(category)}
                             >
-                                {category}
+                                {categoryIcons[category]}
+                                <span>{category}</span>
                             </li>
                         ))}
                     </ul>
                 </nav>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 w-full sm:w-3/4 mx-auto transition-opacity duration-300 ${fade ? 'opacity-0' : 'opacity-100'}`}>
                     {filteredSimulators.map(simulator => (
                         <SimulatorCard key={simulator.id} simulator={simulator} />
                     ))}

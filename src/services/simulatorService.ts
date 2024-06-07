@@ -19,6 +19,18 @@ const simulators: Simulator[] = [
     { id: 16, name: 'Versement transport', category: 'Autres' },
 ];
 
+const categoryColors: { [key: string]: string } = {
+    'Placement': '#C08497',
+    'Emprunts': '#F4E9CD',
+    'Crédit-Bail': '#B0A1BA',
+    'Congés payés': '#FF773D',
+    'Autres': '#CCCCCC'
+};
+
+export const getCategoryColor = (category: string): string => {
+    return categoryColors[category] || '#e2e8f0';
+};
+
 export const getSimulators = (): Promise<Simulator[]> => {
     return new Promise((resolve) => {
         setTimeout(() => {
