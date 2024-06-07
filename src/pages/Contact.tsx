@@ -10,10 +10,10 @@ const Contact: React.FC = () => {
     return (
         <MainLayout>
             <section className="mt-12">
-                <h2 className="text-3xl font-bold text-blue-800 text-center">Contactez nos experts</h2>
+                <h2 className="text-3xl font-bold font-cardo text-[#344697] text-center">Contactez nos experts</h2>
                 <div className='mt-12'>
                     <div className="lg:flex lg:justify-evenly items-center">
-                        <div className='flex flex-col items-center bg-blue-50 text-center text-blue-800 p-2 lg:p-6 rounded-lg shadow-md m-8'>
+                        <div className='flex flex-col items-center bg-blue-50 text-center text-[#344697] p-2 lg:p-6 rounded-lg shadow-md m-8'>
                             <img src={logo3} alt="logo" className="w-60 lg:h-60 rounded h-0" />
                             <h3 className='font-bold m-2'>Claudia PATRICIO PIRES</h3>
                             <div>
@@ -25,7 +25,7 @@ const Contact: React.FC = () => {
                                 <a href="mailto:c.patriciopires@cccomconseil.com" className="hover:underline">c.patriciopires@cccomconseil.com</a>
                             </div>
                         </div>
-                        <div className='flex flex-col items-center bg-blue-50 text-center text-blue-800 p-2 lg:p-6 rounded-lg shadow-md m-8'>
+                        <div className='flex flex-col items-center bg-blue-50 text-center text-[#344697] p-2 lg:p-6 rounded-lg shadow-md m-8'>
                             <img src={logo3} alt="logo" className="w-60 lg:h-60 rounded h-0" />
                             <h3 className='font-bold m-2'>Cyril Herbillon</h3>
                             <div>
@@ -39,11 +39,11 @@ const Contact: React.FC = () => {
                         </div>
                     </div>
                 </div>
-                <h2 className="text-3xl font-bold text-blue-800 mt-16 text-center">Nos cabinets</h2>
+                <h2 className="text-3xl font-bold font-cardo text-[#344697] mt-16 text-center">Nos cabinets</h2>
                 <div className='flex flex-col items-center lg:flex-row lg:justify-evenly p-8 text-center'>
                     <div className='bg-white rounded-lg shadow-md p-4 m-4 w-full lg:w-1/3 bg-blue-50'>
                         <img src={cabinet1} alt="cabinet1" className="rounded-lg shadow-md mb-4 w-full h-36 lg:h-64 object-cover" />
-                        <h3 className='font-bold text-xl text-blue-800'>Milly-la-Forêt</h3>
+                        <h3 className='font-bold text-xl text-[#344697]'>Milly-la-Forêt</h3>
                         <p>7 rue du Camp Romain<br />91490 Milly-la-Forêt</p>
                         <div className="mt-4">
                             <iframe
@@ -59,7 +59,7 @@ const Contact: React.FC = () => {
                     </div>
                     <div className='bg-white rounded-lg shadow-md p-4 m-4 w-full lg:w-1/3 bg-blue-50'>
                         <img src={cabinet2} alt="cabinet2" className="rounded-lg shadow-md mb-4 w-full h-36 lg:h-64 object-cover" />
-                        <h3 className='font-bold text-xl text-blue-800'>Evry</h3>
+                        <h3 className='font-bold text-xl text-[#344697]'>Evry</h3>
                         <p>10 allée des Champs Elysées<br />91000 Evry</p>
                         <div className="mt-4">
                             <iframe
@@ -74,7 +74,7 @@ const Contact: React.FC = () => {
                         </div>
                     </div>
                 </div>
-                <h2 className="text-3xl font-bold text-blue-800 mt-8 text-center">Formulaire</h2>
+                <h2 className="text-3xl font-bold font-cardo text-[#344697] mt-8 text-center">Formulaire</h2>
                 <div className='m-4'>
                     <ContactForm />
                 </div>

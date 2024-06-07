@@ -18,7 +18,7 @@ const Skills: React.FC = () => {
     return (
         <MainLayout>
             <section className="mt-8">
-                <h2 className="text-4xl text-[#344697] font-bold m-8 text-center">Nos Compétences</h2>
+                <h2 className="text-4xl font-cardo text-[#344697] font-bold m-8 text-center">Nos Compétences</h2>
                 <p className='m-12 text-xl text-center'>
                     Nos équipes vous accompagnent dans de nombreux domaines d'expertise. <br />
                     Nos compétences variées vous permettent d'avoir un interlocuteur unique, engagé à vos côtés.
