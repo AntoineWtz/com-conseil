@@ -8,7 +8,7 @@ interface SimulatorCardProps {
 
 const SimulatorCard: React.FC<SimulatorCardProps> = ({ simulator }) => {
     return (
-        <Link to={`/simulator/${simulator.id}`} className="border p-4 rounded shadow-md">
+        <Link to={`/simulator/${simulator.id}`} className="group border p-4 rounded shadow-md bg-white hover:bg-blue-100 transition-colors duration-300">
             <h3 className="text-xl font-bold">{simulator.name}</h3>
             <p className="mt-2">{simulator.category}</p>
         </Link>

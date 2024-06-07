@@ -34,3 +34,12 @@ export const getSimulatorById = (id: number): Promise<Simulator | undefined> => 
         }, 0);
     });
 };
+
+export const getCategories = (): Promise<string[]> => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            const categories = Array.from(new Set(simulators.map(sim => sim.category)));
+            resolve(categories);
+        }, 0);
+    });
+};
