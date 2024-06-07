@@ -23,7 +23,7 @@ export const getSimulators = (): Promise<Simulator[]> => {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(simulators);
-        }, 500);
+        }, 0);
     });
 };
 
@@ -31,6 +31,6 @@ export const getSimulatorById = (id: number): Promise<Simulator | undefined> => 
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(simulators.find(sim => sim.id === id));
-        }, 500);
+        }, 0);
     });
 };
