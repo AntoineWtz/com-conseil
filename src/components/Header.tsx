@@ -31,9 +31,9 @@ const Header = () => {
                 <Link to="/tools" className="flex items-center text-lg hover:text-[#208DB2] duration-200" onClick={() => setIsMenuOpen(false)}>
                     <FaTools className="mr-2" />Outils
                 </Link>
-                <Link to="/news" className="flex items-center text-lg hover:text-[#208DB2] duration-200" onClick={() => setIsMenuOpen(false)}>
+                {/* <Link to="/news" className="flex items-center text-lg hover:text-[#208DB2] duration-200" onClick={() => setIsMenuOpen(false)}>
                     <FaNewspaper className="mr-2" />Actualités
-                </Link>
+                </Link> */}
                 <Link to="/contact" className="flex items-center text-lg hover:text-[#208DB2] duration-200" onClick={() => setIsMenuOpen(false)}>
                     <FaEnvelope className="mr-2" />Contact
                 </Link>

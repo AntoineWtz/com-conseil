@@ -27,14 +27,14 @@ const Contact: React.FC = () => {
                         </div>
                         <div className='flex flex-col items-center bg-blue-50 text-center text-[#344697] p-2 lg:p-6 rounded-lg shadow-md m-8'>
                             <img src={logo3} alt="logo" className="w-60 lg:h-60 rounded h-0" />
-                            <h3 className='font-bold m-2'>Cyril Herbillon</h3>
+                            <h3 className='font-bold m-2'>David WIART</h3>
                             <div>
                                 <FaPhone className="inline-block mr-2" />
                                 <a href="tel:+330184180980">01 84 18 09 80</a>
                             </div>
                             <div>
                                 <FaEnvelope className="inline-block mr-2" />
-                                <a href="mailto:c.herbillon@cccomconseil.com" className="hover:underline">c.herbillon@cccomconseil.com</a>
+                                <a href="mailto:c.herbillon@cccomconseil.com" className="hover:underline">d.wiart@cccomconseil.com</a>
                             </div>
                         </div>
                     </div>

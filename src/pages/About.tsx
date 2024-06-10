@@ -35,11 +35,6 @@ const About: React.FC = () => {
                             <p>Expert-comptable</p>
                         </div>
                         <div className='flex flex-col items-center bg-blue-100 text-center text-blue-800 p-6 rounded-lg shadow-md mb-12'>
-                            <img src={logo2} alt="logo" className="w-60 h-60 rounded" />
-                            <h3 className='font-bold m-2'>Cyril Herbillon</h3>
-                            <p>Directeur de Mission</p>
-                        </div>
-                        <div className='flex flex-col items-center bg-blue-100 text-center text-blue-800 p-6 rounded-lg shadow-md mb-12'>
                             <img src={logo3} alt="logo" className="w-60 h-60 rounded" />
                             <h3 className='font-bold m-2'>Romain JOUAULT</h3>
                             <p>Assistant Comptable</p>
