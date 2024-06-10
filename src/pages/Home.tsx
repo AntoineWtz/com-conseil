@@ -57,7 +57,7 @@ const Home: React.FC = () => {
                         ))
                     )}
                 </div>
-                <h3 className="text-3xl font-cardo text-[#344697] font-bold mb-8 mt-12 text-center">Les actualités C&C</h3>
+                {/* <h3 className="text-3xl font-cardo text-[#344697] font-bold mb-8 mt-12 text-center">Les actualités C&C</h3>
                 <div className="flex flex-wrap justify-center gap-4">
                     {loadingArticles ? (
                         <p>Chargement des articles...</p>
@@ -71,7 +71,7 @@ const Home: React.FC = () => {
                             </div>
                         ))
                     )}
-                </div>
+                </div> */}
                 <h3 className="text-2xl lg:text-3xl font-cardo text-[#344697] font-bold mt-20 text-center">Nous contacter</h3>
                 <div className='m-4'>
                     <ContactForm />
