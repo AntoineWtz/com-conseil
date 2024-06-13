@@ -1,4 +1,3 @@
-
 export interface Tool {
     id: number;
     name: string;
@@ -18,7 +17,4 @@ export interface Simulator {
     id: number;
     name: string;
     category: string;
-    description?: string;
-    formula?: string;
-    example?: string;
 }
