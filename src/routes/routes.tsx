@@ -11,7 +11,15 @@ import Scheduler from '../pages/Scheduler';
 import UsefulLinks from '../pages/UsefulLinks';
 import SkillDetail from '../pages/SkillDetail';
 
+import RendementVersementsConstants from '../pages/simulators/RendementVersementsConstants';
+import RendementCapital from '../pages/simulators/RendementCapital';
+import ValeurVersements from '../pages/simulators/ValeurVersements';
+import ValeurCapital from '../pages/simulators/ValeurCapital';
+
 import CapitalEmprunte from '../pages/simulators/CapitalEmprunte';
+import CalculDuree from '../pages/simulators/CalculDuree';
+import CalculVersementPeriodique from '../pages/simulators/CalculVersementPeriodique';
+import CalculTaux from '../pages/simulators/CalculTaux';
 
 const AppRoutes: React.FC = () => {
     return (
@@ -22,7 +30,17 @@ const AppRoutes: React.FC = () => {
                 <Route path="/skills" element={<Skills />} />
                 <Route path="/tools" element={<Tools />} />
                 <Route path="/simulators" element={<Simulators />} />
+
+                <Route path="/simulator/1" element={<RendementVersementsConstants />} />
+                <Route path="/simulator/2" element={<RendementCapital />} />
+                <Route path="/simulator/3" element={<ValeurVersements />} />
+                <Route path="/simulator/4" element={<ValeurCapital />} />
+
                 <Route path="/simulator/5" element={<CapitalEmprunte />} />
+                <Route path="/simulator/6" element={<CalculDuree />} />
+                <Route path="/simulator/7" element={<CalculVersementPeriodique />} />
+                <Route path="/simulator/8" element={<CalculTaux />} />
+
                 <Route path="/scheduler" element={<Scheduler />} />
                 <Route path="/useful-links" element={<UsefulLinks />} />
                 <Route path="/contact" element={<Contact />} />
