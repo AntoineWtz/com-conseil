@@ -5,25 +5,16 @@ import logo2 from '../assets/images/com_conseil_logo2.jpg';
 import ContactForm from '../components/ContactForm';
 import SkillCard from '../components/SkillCard';
 import { getSkills } from '../services/skillService';
-import { getArticles } from '../services/articleService';
-import { Skill, Article } from '../types';
-import { Link } from 'react-router-dom';
+import { Skill } from '../types';
 
 const Home: React.FC = () => {
     const [skills, setSkills] = useState<Skill[]>([]);
-    const [articles, setArticles] = useState<Article[]>([]);
     const [loadingSkills, setLoadingSkills] = useState<boolean>(true);
-    const [loadingArticles, setLoadingArticles] = useState<boolean>(true);
 
     useEffect(() => {
         getSkills().then(data => {
             setSkills(data);
             setLoadingSkills(false);
-        });
-
-        getArticles().then(data => {
-            setArticles(data);
-            setLoadingArticles(false);
         });
     }, []);
 
@@ -57,21 +48,6 @@ const Home: React.FC = () => {
                         ))
                     )}
                 </div>
-                {/* <h3 className="text-3xl font-cardo text-[#344697] font-bold mb-8 mt-12 text-center">Les actualités C&C</h3>
-                <div className="flex flex-wrap justify-center gap-4">
-                    {loadingArticles ? (
-                        <p>Chargement des articles...</p>
-                    ) : (
-                        articles.map(article => (
-                            <div key={article.id} className="border p-4 rounded shadow-md max-w-xs">
-                                <h4 className="text-xl font-bold">{article.title}</h4>
-                                <p className="text-gray-600">{article.content.substring(0, 100)}...</p>
-                                <p className="text-gray-500 text-sm">Publié par {article.author} le {article.publishedDate}</p>
-                                <Link to={`/article/${article.id}`} className="text-blue-500 hover:underline mt-2 inline-block">Lire plus</Link>
-                            </div>
-                        ))
-                    )}
-                </div> */}
                 <h3 className="text-2xl lg:text-3xl font-cardo text-[#344697] font-bold mt-20 text-center">Nous contacter</h3>
                 <div className='m-4'>
                     <ContactForm />
