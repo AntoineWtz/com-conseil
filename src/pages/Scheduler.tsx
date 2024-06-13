@@ -18,17 +18,17 @@ const Scheduler: React.FC = () => {
 
     return (
         <MainLayout>
-            <div className="container mx-auto py-4">
-                <h1 className="text-2xl font-bold mb-4">Scheduler</h1>
+            <div className="mt-8">
+                <h1 className="text-3xl font-cardo text-[#344697] font-bold mb-4 text-center">Echéancier</h1>
                 <div className="flex flex-col items-center">
                     <Calendar
                         onChange={handleDateChange}
                         value={selectedDate}
-                        className="mb-4"
+                        className="m-4 w-full shadow-lg p-4 rounded-lg"
                     />
                     {selectedDate && (
-                        <p className="text-lg">
-                            Selected Date: {selectedDate.toLocaleDateString()}
+                        <p className="text-xl text-[#344697] font-bold">
+                            {selectedDate.toLocaleDateString()}
                         </p>
                     )}
                 </div>

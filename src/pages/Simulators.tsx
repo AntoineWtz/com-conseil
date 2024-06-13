@@ -25,7 +25,7 @@ const Simulators: React.FC = () => {
         setTimeout(() => {
             setSelectedCategory(category);
             setFade(false);
-        }, 300); 
+        }, 300);
     };
 
     const filteredSimulators = selectedCategory && selectedCategory !== 'Tous'
