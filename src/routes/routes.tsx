@@ -15,15 +15,18 @@ import RendementVersementsConstants from '../pages/simulators/RendementVersement
 import RendementCapital from '../pages/simulators/RendementCapital';
 import ValeurVersements from '../pages/simulators/ValeurVersements';
 import ValeurCapital from '../pages/simulators/ValeurCapital';
-
 import CapitalEmprunte from '../pages/simulators/CapitalEmprunte';
 import CalculDuree from '../pages/simulators/CalculDuree';
 import CalculVersementPeriodique from '../pages/simulators/CalculVersementPeriodique';
 import CalculTaux from '../pages/simulators/CalculTaux';
-
 import CalculLoyers from '../pages/simulators/CalculLoyers';
 import CalculCreditBailTaux from '../pages/simulators/CalculCreditBailTaux';
 import CalculCreditBailDuree from '../pages/simulators/CalculCreditBailDuree';
+import AbsencesCongesSalaries from '../pages/simulators/AbsencesCongesSalaries';
+import CorrespondanceJours from '../pages/simulators/CorrespondanceJours';
+import SeuilRentabilite from '../pages/simulators/SeuilRentabilite';
+import FraisKilometriques from '../pages/simulators/FraisKilometriques';
+import VersementTransport from '../pages/simulators/VersementTransport';
 
 const AppRoutes: React.FC = () => {
     return (
@@ -39,15 +42,18 @@ const AppRoutes: React.FC = () => {
                 <Route path="/simulator/2" element={<RendementCapital />} />
                 <Route path="/simulator/3" element={<ValeurVersements />} />
                 <Route path="/simulator/4" element={<ValeurCapital />} />
-
                 <Route path="/simulator/5" element={<CapitalEmprunte />} />
                 <Route path="/simulator/6" element={<CalculDuree />} />
                 <Route path="/simulator/7" element={<CalculVersementPeriodique />} />
                 <Route path="/simulator/8" element={<CalculTaux />} />
-
                 <Route path="/simulator/9" element={<CalculLoyers />} />
                 <Route path="/simulator/10" element={<CalculCreditBailTaux />} />
                 <Route path="/simulator/11" element={<CalculCreditBailDuree />} />
+                <Route path="/simulator/12" element={<AbsencesCongesSalaries />} />
+                <Route path="/simulator/13" element={<CorrespondanceJours />} />
+                <Route path="/simulator/14" element={<SeuilRentabilite />} />
+                <Route path="/simulator/15" element={<FraisKilometriques />} />
+                <Route path="/simulator/16" element={<VersementTransport />} />
 
                 <Route path="/scheduler" element={<Scheduler />} />
                 <Route path="/useful-links" element={<UsefulLinks />} />
