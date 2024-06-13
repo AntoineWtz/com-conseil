@@ -21,6 +21,10 @@ import CalculDuree from '../pages/simulators/CalculDuree';
 import CalculVersementPeriodique from '../pages/simulators/CalculVersementPeriodique';
 import CalculTaux from '../pages/simulators/CalculTaux';
 
+import CalculLoyers from '../pages/simulators/CalculLoyers';
+import CalculCreditBailTaux from '../pages/simulators/CalculCreditBailTaux';
+import CalculCreditBailDuree from '../pages/simulators/CalculCreditBailDuree';
+
 const AppRoutes: React.FC = () => {
     return (
         <Router>
@@ -40,6 +44,10 @@ const AppRoutes: React.FC = () => {
                 <Route path="/simulator/6" element={<CalculDuree />} />
                 <Route path="/simulator/7" element={<CalculVersementPeriodique />} />
                 <Route path="/simulator/8" element={<CalculTaux />} />
+
+                <Route path="/simulator/9" element={<CalculLoyers />} />
+                <Route path="/simulator/10" element={<CalculCreditBailTaux />} />
+                <Route path="/simulator/11" element={<CalculCreditBailDuree />} />
 
                 <Route path="/scheduler" element={<Scheduler />} />
                 <Route path="/useful-links" element={<UsefulLinks />} />
