@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FaBars, FaTimes, FaHome, FaHeart, FaStar, FaTools, FaNewspaper, FaEnvelope, FaUser } from 'react-icons/fa';
+import { FaBars, FaTimes, FaHome, FaHeart, FaStar, FaTools, FaEnvelope, FaUser } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import logo from '../assets/images/com_conseil_logo.png';
 
@@ -7,7 +7,7 @@ const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <header className="bg-white text-[#344697] p-4 flex justify-between items-center sticky top-0 z-50 shadow-md">
+        <header className="bg-white text-[#344697] p-4 flex justify-between items-center sticky top-0 z-50 shadow-sm">
             <div>
                 <Link to="/">
                     <img src={logo} alt="Com Conseil" className="h-10 lg:h-20" />
@@ -31,9 +31,6 @@ const Header = () => {
                 <Link to="/tools" className="flex items-center text-lg hover:text-[#208DB2] duration-200" onClick={() => setIsMenuOpen(false)}>
                     <FaTools className="mr-2" />Outils
                 </Link>
-                {/* <Link to="/news" className="flex items-center text-lg hover:text-[#208DB2] duration-200" onClick={() => setIsMenuOpen(false)}>
-                    <FaNewspaper className="mr-2" />Actualités
-                </Link> */}
                 <Link to="/contact" className="flex items-center text-lg hover:text-[#208DB2] duration-200" onClick={() => setIsMenuOpen(false)}>
                     <FaEnvelope className="mr-2" />Contact
                 </Link>
