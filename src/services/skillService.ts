@@ -1,10 +1,10 @@
 import { Skill } from '../types';
-import skill1 from '../assets/images/comptabilite-expertise.jpg';
-import skill2 from '../assets/images/accompagnement-createur.jpg';
-import skill3 from '../assets/images/ressources-humaines.jpg';
-import skill4 from '../assets/images/transmission-entreprise.jpg';
-import skill5 from '../assets/images/fiscalite-personnelle.jpg';
-import skill6 from '../assets/images/gestion-patrimoine.jpg';
+import skill1 from '../assets/images/skills/comptabilite-expertise.jpg';
+import skill2 from '../assets/images/skills/accompagnement-createur.jpg';
+import skill3 from '../assets/images/skills/ressources-humaines.jpg';
+import skill4 from '../assets/images/skills/transmission-entreprise.jpg';
+import skill5 from '../assets/images/skills/fiscalite-personnelle.jpg';
+import skill6 from '../assets/images/skills/gestion-patrimoine.jpg';
 
 const skills: Skill[] = [
     {

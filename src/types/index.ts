@@ -18,3 +18,10 @@ export interface Simulator {
     name: string;
     category: string;
 }
+
+export interface Link {
+    name: string;
+    url: string;
+    description?: string;
+    image?: string;
+}
