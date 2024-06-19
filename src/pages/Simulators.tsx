@@ -3,6 +3,7 @@ import MainLayout from '../layouts/MainLayout';
 import { getSimulators, getCategories } from '../services/simulatorService';
 import { Simulator } from '../types';
 import SimulatorCard from '../components/SimulatorCard';
+import { motion, AnimatePresence } from 'framer-motion';
 import { FaTh, FaMoneyBillWave, FaChartBar, FaCreditCard, FaCalendarAlt, FaWrench } from 'react-icons/fa';
 
 const Simulators: React.FC = () => {
@@ -10,7 +11,6 @@ const Simulators: React.FC = () => {
     const [loading, setLoading] = useState<boolean>(true);
     const [categories, setCategories] = useState<string[]>([]);
     const [selectedCategory, setSelectedCategory] = useState<string | null>('Tous');
-    const [fade, setFade] = useState<boolean>(false);
 
     useEffect(() => {
         Promise.all([getSimulators(), getCategories()]).then(([simulatorData, categoryData]) => {
@@ -21,11 +21,7 @@ const Simulators: React.FC = () => {
     }, []);
 
     const handleCategoryChange = (category: string) => {
-        setFade(true);
-        setTimeout(() => {
-            setSelectedCategory(category);
-            setFade(false);
-        }, 300);
+        setSelectedCategory(category);
     };
 
     const filteredSimulators = selectedCategory && selectedCategory !== 'Tous'
@@ -55,21 +51,23 @@ const Simulators: React.FC = () => {
         <MainLayout>
             <section className="mt-8">
                 <h2 className="text-3xl font-cardo text-[#344697] font-bold mb-4 text-center">Nos Simulateurs</h2>
-                <nav className="flex flex-wrap justify-center mt-8 mb-8">
-                    <ul className="flex flex-wrap justify-center space-x-2">
-                        {categories.map(category => (
-                            <li
-                                key={category}
-                                className={`font-bold text-sm lg:text-base cursor-pointer mb-2 px-4 py-2 rounded-full flex items-center space-x-2 ${selectedCategory === category ? 'bg-[#344697] text-white' : ''} text-[#344697] hover:bg-blue-200 transition-colors duration-300`}
-                                onClick={() => handleCategoryChange(category)}
-                            >
+                <div className="flex justify-center mb-8">
+                    {categories.map(category => (
+                        <motion.button
+                            key={category}
+                            onClick={() => handleCategoryChange(category)}
+                            className={`px-4 py-2 mx-2 border-b-2 ${selectedCategory === category ? 'border-[#344697] text-[#344697] font-bold' : 'border-transparent text-gray-500'}`}
+                            whileTap={{ scale: 0.95 }}
+                            transition={{ type: "spring", stiffness: 300 }}
+                        >
+                            <div className={`text-sm lg:text-base cursor-pointer rounded-full flex items-center space-x-2`}>
                                 {categoryIcons[category]}
                                 <span>{category}</span>
-                            </li>
-                        ))}
-                    </ul>
-                </nav>
-                <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 w-full sm:w-3/4 mx-auto transition-opacity duration-300 ${fade ? 'opacity-0' : 'opacity-100'}`}>
+                            </div>
+                        </motion.button>
+                    ))}
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 w-full sm:w-3/4 mx-auto">
                     {filteredSimulators.map(simulator => (
                         <SimulatorCard key={simulator.id} simulator={simulator} />
                     ))}

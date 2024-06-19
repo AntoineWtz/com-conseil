@@ -39,13 +39,13 @@ export const getSimulators = (): Promise<Simulator[]> => {
     });
 };
 
-export const getSimulatorById = (id: number): Promise<Simulator | undefined> => {
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            resolve(simulators.find(sim => sim.id === id));
-        }, 0);
-    });
-};
+// export const getSimulatorById = (id: number): Promise<Simulator | undefined> => {
+//     return new Promise((resolve) => {
+//         setTimeout(() => {
+//             resolve(simulators.find(sim => sim.id === id));
+//         }, 0);
+//     });
+// };
 
 export const getCategories = (): Promise<string[]> => {
     return new Promise((resolve) => {
