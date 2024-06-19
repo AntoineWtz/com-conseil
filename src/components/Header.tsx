@@ -87,7 +87,7 @@ const Header = () => {
                                 <Link
                                     key={skill.id}
                                     to={`/skill/${skill.id}`}
-                                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                    className="block px-4 py-2  text-[#344697] hover:bg-blue-100"
                                     onClick={handleMenuToggle}
                                 >
                                     {skill.name}
@@ -115,21 +115,21 @@ const Header = () => {
                         >
                             <Link
                                 to="/simulators"
-                                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                className="block px-4 py-2  text-[#344697] hover:bg-blue-100"
                                 onClick={handleMenuToggle}
                             >
                                 Simulateurs
                             </Link>
                             <Link
                                 to="/scheduler"
-                                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                className="block px-4 py-2  text-[#344697] hover:bg-blue-100"
                                 onClick={handleMenuToggle}
                             >
                                 Échéancier
                             </Link>
                             <Link
                                 to="/useful-links"
-                                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                className="block px-4 py-2  text-[#344697] hover:bg-blue-100"
                                 onClick={handleMenuToggle}
                             >
                                 Liens Utiles
