@@ -34,14 +34,15 @@ const UsefulLinks: React.FC = () => {
                             initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: 20 }}
-                            transition={{ duration: 0.3 }}
+                            transition={{ duration: 0.2 }}
                         >
                             {links[activeCategory].map((link: Link, index: number) => (
                                 <motion.div
                                     key={index}
                                     className="flex flex-col md:flex-row items-center border p-4 rounded-lg shadow-md mb-4 transition-transform transform hover:scale-95 duration-300"
-                                    whileHover={{ scale: 1.05 }}
-                                    transition={{ type: "spring", stiffness: 300 }}
+                                    whileHover={{ scale: 0.95 }}
+                                    transition={{ type: "tween", duration: 0.1 }}
+                                // transition={{ type: "spring", stiffness: 100 }}
                                 >
                                     <img src={link.image} alt={link.name} className='h-36 w-36 object-contain md:mr-4 mb-2 md:mb-0' />
                                     <div className="text-center md:text-left">
