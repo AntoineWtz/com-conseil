@@ -67,10 +67,29 @@ const Simulators: React.FC = () => {
                         </motion.button>
                     ))}
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 w-full sm:w-3/4 mx-auto">
-                    {filteredSimulators.map(simulator => (
-                        <SimulatorCard key={simulator.id} simulator={simulator} />
-                    ))}
+                <div className="w-11/12 md:w-4/5 mx-auto">
+                    <AnimatePresence mode='wait'>
+                        <motion.div
+                            key={selectedCategory}
+                            initial={{ opacity: 0, x: -20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            exit={{ opacity: 0, x: 20 }}
+                            transition={{ duration: 0.3 }}
+                            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 w-full sm:w-3/4 mx-auto"
+                        >
+                            {filteredSimulators.map(simulator => (
+                                <motion.div
+                                    key={simulator.id}
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    exit={{ opacity: 0 }}
+                                    transition={{ duration: 0.3 }}
+                                >
+                                    <SimulatorCard key={simulator.id} simulator={simulator} />
+                                </motion.div>
+                            ))}
+                        </motion.div>
+                    </AnimatePresence>
                 </div>
             </section>
         </MainLayout>
