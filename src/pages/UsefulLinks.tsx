@@ -24,14 +24,16 @@ const UsefulLinks: React.FC = () => {
                         </button>
                     ))}
                 </div>
-                <div className="w-3/4 mx-auto">
+                <div className="w-11/12 md:w-2/3 mx-auto">
                     {links[activeCategory].map((link: Link, index: number) => (
-                        <div key={index} className="border p-4 rounded shadow-md mb-4">
-                            <img src={link.image} alt={link.name} className="fit-content" />
-                            <a href={link.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline text-lg font-semibold">
-                                {link.name}
-                            </a>
-                            <p className="mt-2">{link.description}</p>
+                        <div key={index} className="flex flex-col md:flex-row items-center border p-4 rounded-lg shadow-md mb-4 transition-transform transform hover:scale-95 duration-300">
+                            <img src={link.image} alt={link.name} className='h-36 w-36 object-contain md:mr-4 mb-2 md:mb-0' />
+                            <div className="text-center md:text-left">
+                                <a href={link.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline text-lg font-semibold">
+                                    {link.name}
+                                </a>
+                                <p className="mt-2">{link.description}</p>
+                            </div>
                         </div>
                     ))}
                 </div>
