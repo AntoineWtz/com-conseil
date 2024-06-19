@@ -27,6 +27,7 @@ const UsefulLinks: React.FC = () => {
                 <div className="w-3/4 mx-auto">
                     {links[activeCategory].map((link: Link, index: number) => (
                         <div key={index} className="border p-4 rounded shadow-md mb-4">
+                            <img src={link.image} alt={link.name} className="fit-content" />
                             <a href={link.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline text-lg font-semibold">
                                 {link.name}
                             </a>

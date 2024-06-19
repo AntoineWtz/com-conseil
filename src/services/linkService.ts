@@ -1,13 +1,19 @@
 import { Link } from '../types';
+import unapl from '../assets/images/links/unapl.jpg';
+import cnpl from '../assets/images/links/cnpl.jpg';
+import cnavpl from '../assets/images/links/cnavpl.jpg';
+import unasa from '../assets/images/links/unasa.jpg';
+import jedeclare from '../assets/images/links/jedeclare.jpg';
+import netEntreprises from '../assets/images/links/net-entreprises.jpg';
 
 const links: Record<string, Link[]> = {
     "Aide aux professions libérales": [
-        { name: 'Union Nationale des Professions Libérales', url: 'https://unapl.fr/', description: 'Le site de l\'un des trois principaux représentants des libéraux' },
-        { name: 'Chambre Nationale des Professions Libérales', url: 'https://cnpl.org/', description: 'La Chambre Nationale des Professions Libérales est un organisme représentatif des professions libérales considérée comme le premier organisme à avoir rassemblé les professionnels libéraux.' },
-        { name: 'Caisse Nationale d\'Assurance Vieillesse des Professions Libérales', url: 'https://www.cnavpl.fr/', description: 'L\'Organisation autonome d\'assurance vieillesse des professions libérales comprend une Caisse nationale, la CNAVPL, et dix sections professionnelles spécialisées (notaires, médecins, agents d’assurance, etc. ) dont la CIPAV.' },
-        { name: 'UNASA', url: 'http://www.unasa.fr/', description: 'L\'UNASA regroupe 81 associations agréées réparties sur l\'ensemble du territoire, majoritairement interprofessionnelles. Soit un total de près de 190 000 professionnels libéraux adhérents, et plus du tiers des professionnels adhérents à une association agréée.' },
-        { name: 'Jedeclare.com', url: 'https://ecma-solutions.com/produits-expert-comptable/jedeclare', description: 'Le site jedeclare.com est le portail officiel de l\'ordre des experts- comptables pour vos déclarations fiscales et sociales.' },
-        { name: 'Net-Entreprises', url: 'https://www.net-entreprises.fr/', description: 'Le site proposé par les organismes de protection sociale aux entreprises pour effectuer en ligne les déclarations sociales et régler les cotisations et contributions.' }
+        { name: 'Union Nationale des Professions Libérales', url: 'https://unapl.fr/', image: unapl, description: 'Le site de l\'un des trois principaux représentants des libéraux' },
+        { name: 'Chambre Nationale des Professions Libérales', url: 'https://cnpl.org/', image: cnpl, description: 'La Chambre Nationale des Professions Libérales est un organisme représentatif des professions libérales considérée comme le premier organisme à avoir rassemblé les professionnels libéraux.' },
+        { name: 'Caisse Nationale d\'Assurance Vieillesse des Professions Libérales', url: 'https://www.cnavpl.fr/', image: cnavpl, description: 'L\'Organisation autonome d\'assurance vieillesse des professions libérales comprend une Caisse nationale, la CNAVPL, et dix sections professionnelles spécialisées (notaires, médecins, agents d’assurance, etc. ) dont la CIPAV.' },
+        { name: 'UNASA', url: 'http://www.unasa.fr/', image: unasa, description: 'L\'UNASA regroupe 81 associations agréées réparties sur l\'ensemble du territoire, majoritairement interprofessionnelles. Soit un total de près de 190 000 professionnels libéraux adhérents, et plus du tiers des professionnels adhérents à une association agréée.' },
+        { name: 'Jedeclare.com', url: 'https://ecma-solutions.com/produits-expert-comptable/jedeclare', image: jedeclare, description: 'Le site jedeclare.com est le portail officiel de l\'ordre des experts- comptables pour vos déclarations fiscales et sociales.' },
+        { name: 'Net-Entreprises', url: 'https://www.net-entreprises.fr/', image: netEntreprises, description: 'Le site proposé par les organismes de protection sociale aux entreprises pour effectuer en ligne les déclarations sociales et régler les cotisations et contributions.' }
     ],
     "Sites gouvernementaux": [
         { name: 'Ministère des finances et des comptes publics', url: 'https://www.economie.gouv.fr/', description: 'Le site ou vous pourrez consulter toutes les actualités, la documentation, les études statistiques, les publications des Ministères et télécharger divers formulaires (création d\'entreprise, formation alternance, etc.) textes et circulaires réglementaires.' },
