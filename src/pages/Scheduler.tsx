@@ -24,11 +24,19 @@ const Scheduler: React.FC = () => {
                     <Calendar
                         onChange={handleDateChange}
                         value={selectedDate}
-                        className="m-4 w-full shadow-lg p-4 rounded-lg"
+                        className="w-full max-w-lg p-4 bg-white rounded-lg shadow-md"
+                        tileClassName={({ date, view }) =>
+                            view === 'month' && date.getDay() === 0 ? 'bg-red-500 text-white' : ''
+                        }
                     />
                     {selectedDate && (
-                        <p className="text-xl text-[#344697] font-bold">
-                            {selectedDate.toLocaleDateString()}
+                        <p className="text-lg text-[#344697] font-bold mt-4">
+                            {selectedDate.toLocaleDateString('fr-FR', {
+                                weekday: 'long',
+                                year: 'numeric',
+                                month: 'long',
+                                day: 'numeric'
+                            })}
                         </p>
                     )}
                 </div>
