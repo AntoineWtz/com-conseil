@@ -13,13 +13,12 @@ const UsefulLinks: React.FC = () => {
         <MainLayout>
             <section className="mt-8">
                 <h2 className="text-3xl font-cardo text-[#344697] font-bold mb-4 text-center">Sites Utiles</h2>
-                <div className="flex justify-center mb-8">
+                <div className="flex justify-center mb-4"> {/* Réduction supplémentaire de la largeur sur mobile */}
                     {categories.map(category => (
                         <motion.button
                             key={category}
                             onClick={() => setActiveCategory(category)}
-                            className={`px-4 py-2 mx-2 border-b-2 ${activeCategory === category ? 'border-[#344697] text-[#344697] font-bold' : 'border-transparent text-gray-500'
-                                }`}
+                            className={`px-2 py-1 mx-1 md:mx-2 border-b-2 ${activeCategory === category ? 'border-[#344697] text-[#344697] font-bold' : 'border-transparent text-gray-500'}`}
                             whileTap={{ scale: 0.95 }}
                             transition={{ type: "spring", stiffness: 300 }}
                         >
@@ -42,7 +41,6 @@ const UsefulLinks: React.FC = () => {
                                     className="flex flex-col md:flex-row items-center border p-4 rounded-lg shadow-md mb-4 transition-transform transform hover:scale-95 duration-300"
                                     whileHover={{ scale: 0.95 }}
                                     transition={{ type: "tween", duration: 0.1 }}
-                                // transition={{ type: "spring", stiffness: 100 }}
                                 >
                                     <img src={link.image} alt={link.name} className='h-36 w-36 object-contain md:mr-4 mb-2 md:mb-0' />
                                     <div className="text-center md:text-left">
