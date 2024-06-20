@@ -52,20 +52,22 @@ const Simulators: React.FC = () => {
             <section className="mt-8">
                 <h2 className="text-3xl font-cardo text-[#344697] font-bold mb-4 text-center">Nos Simulateurs</h2>
                 <div className="flex justify-center mb-8">
-                    {categories.map(category => (
-                        <motion.button
-                            key={category}
-                            onClick={() => handleCategoryChange(category)}
-                            className={`px-4 py-2 mx-2 border-b-2 ${selectedCategory === category ? 'border-[#344697] text-[#344697] font-bold' : 'border-transparent text-gray-500'}`}
-                            whileTap={{ scale: 0.95 }}
-                            transition={{ type: "spring", stiffness: 300 }}
-                        >
-                            <div className={`text-sm lg:text-base cursor-pointer rounded-full flex items-center space-x-2`}>
-                                {categoryIcons[category]}
-                                <span>{category}</span>
-                            </div>
-                        </motion.button>
-                    ))}
+                    <div className="flex flex-wrap justify-center w-full max-w-lg">
+                        {categories.map(category => (
+                            <motion.button
+                                key={category}
+                                onClick={() => handleCategoryChange(category)}
+                                className={`px-4 py-2 mx-2 my-1 border-b-2 ${selectedCategory === category ? 'border-[#344697] text-[#344697] font-bold' : 'border-transparent text-gray-500'}`}
+                                whileTap={{ scale: 0.95 }}
+                                transition={{ type: "spring", stiffness: 300 }}
+                            >
+                                <div className={`text-sm lg:text-base cursor-pointer rounded-full flex items-center space-x-2`}>
+                                    {categoryIcons[category]}
+                                    <span>{category}</span>
+                                </div>
+                            </motion.button>
+                        ))}
+                    </div>
                 </div>
                 <div className="w-11/12 md:w-4/5 mx-auto">
                     <AnimatePresence mode='wait'>
@@ -75,7 +77,7 @@ const Simulators: React.FC = () => {
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: 20 }}
                             transition={{ duration: 0.2 }}
-                            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 w-full sm:w-3/4 mx-auto"
+                            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4"
                         >
                             {filteredSimulators.map(simulator => (
                                 <motion.div
