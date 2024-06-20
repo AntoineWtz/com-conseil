@@ -13,7 +13,7 @@ const UsefulLinks: React.FC = () => {
         <MainLayout>
             <section className="mt-8">
                 <h2 className="text-3xl font-cardo text-[#344697] font-bold mb-4 text-center">Sites Utiles</h2>
-                <div className="flex justify-center mb-4"> {/* Réduction supplémentaire de la largeur sur mobile */}
+                <div className="flex justify-center mb-4">
                     {categories.map(category => (
                         <motion.button
                             key={category}
@@ -43,11 +43,11 @@ const UsefulLinks: React.FC = () => {
                                     transition={{ type: "tween", duration: 0.1 }}
                                 >
                                     <img src={link.image} alt={link.name} className='h-36 w-36 object-contain md:mr-4 mb-2 md:mb-0' />
-                                    <div className="text-center md:text-left">
+                                    <div className="text-justify md:text-left">
                                         <a href={link.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline text-lg font-semibold">
                                             {link.name}
                                         </a>
-                                        <p className="mt-2">{link.description}</p>
+                                        <p className="mt-2 md:text-left text-justify">{link.description}</p>
                                     </div>
                                 </motion.div>
                             ))}
