@@ -52,7 +52,7 @@ const Simulators: React.FC = () => {
             <section className="mt-8">
                 <h2 className="text-3xl font-cardo text-[#344697] font-bold mb-4 text-center">Nos Simulateurs</h2>
                 <div className="flex justify-center mb-8">
-                    <div className="w-full sm:w-3/4 lg:w-1/2 flex flex-wrap justify-center">
+                    <div className="flex flex-wrap justify-center w-full max-w-lg">
                         {categories.map(category => (
                             <motion.button
                                 key={category}
@@ -77,7 +77,7 @@ const Simulators: React.FC = () => {
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: 20 }}
                             transition={{ duration: 0.2 }}
-                            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 w-full sm:w-3/4 mx-auto"
+                            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4"
                         >
                             {filteredSimulators.map(simulator => (
                                 <motion.div
