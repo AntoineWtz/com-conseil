@@ -46,7 +46,7 @@ const SkillDetail: React.FC = () => {
                 <h3 className="text-xl text-[#208DB2] lg:text-2xl font-semibold mt-4 mb-4 ">Présentation</h3>
                 <p className="lg:text-lg text-justify w-2/3">{skill.description}</p>
                 <h3 className="text-xl text-[#208DB2] lg:text-2xl font-semibold mt-8 mb-4">Nos missions</h3>
-                <ul className="list-disc w-2/3 lg:w-1/5 text-left mx-auto">
+                <ul className="list-disc w-2/3 lg:w-1/3 text-left mx-auto">
                     {skill.missions?.map((mission, index) => (
                         <li key={index} className="lg:text-lg mb-2">{mission}</li>
                     ))}
