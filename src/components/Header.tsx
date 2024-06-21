@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { FaBars, FaTimes, FaHome, FaHeart, FaStar, FaTools, FaEnvelope, FaUser } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import logo from '../assets/images/com_conseil_logo.png';
 import { getSkills } from '../services/skillService';
 import { Skill } from '../types';
@@ -13,6 +13,8 @@ const Header = () => {
     const [isToolsHovered, setIsToolsHovered] = useState(false);
     const [skills, setSkills] = useState<Skill[]>([]);
     const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
+
+    const location = useLocation();
 
     useEffect(() => {
         const handleResize = () => {
@@ -28,14 +30,6 @@ const Header = () => {
 
     const handleMenuToggle = () => {
         setIsMenuOpen(!isMenuOpen);
-    };
-
-    const handleSkillsDropdownToggle = (isOpen: boolean) => {
-        setIsSkillsDropdownOpen(isOpen);
-    };
-
-    const handleToolsDropdownToggle = (isOpen: boolean) => {
-        setIsToolsDropdownOpen(isOpen);
     };
 
     useEffect(() => {
@@ -60,7 +54,12 @@ const Header = () => {
         if (isMobile) {
             setIsMenuOpen(false);
         }
+        window.scrollTo(0, 0);
     };
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [location]);
 
     return (
         <header className="bg-white text-[#344697] p-4 flex justify-between items-center sticky top-0 z-50 shadow-sm">
