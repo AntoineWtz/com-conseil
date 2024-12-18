@@ -24,7 +24,7 @@ const Home: React.FC = () => {
             <section className="lg:mt-8 mb-8 flex flex-col items-center">
                 <h2 className="text-2xl lg:text-4xl font-cardo text-[#344697] font-bold text-center">Bienvenue chez C&C Com'Conseil</h2>
                 <div className="flex flex-col lg:flex-row justify-evenly items-center m-8">
-                    <p className="lg:mt-12 lg:text-lg lg:w-1/2 text-justify lg:text-center lg:text-left">
+                    <p className="lg:mt-12 lg:text-xl lg:w-1/2 text-justify lg:text-left">
                         Le cabinet C&C Com' Conseil est une société d'expertise comptable implantée à Milly la Forêt, dans l'Essonne en région île de France. Nous sommes inscrits à l'ordre des experts comptables.<br /><br />
                         Le cabinet est administré par Claudia Patricio Pires et Cyril Herbillon, accompagnés par une équipe de collaborateurs à votre écoute pour vous conseiller, vous développer et vous organiser en matière comptable, fiscale, juridique et sociale.<br /><br />
                         La priorité de notre cabinet : être au plus proche de vous et vos attentes dans les missions que vous nous confirez !<br /><br />

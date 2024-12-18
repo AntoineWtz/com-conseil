@@ -30,7 +30,7 @@ import VersementTransport from '../pages/simulators/VersementTransport';
 
 const AppRoutes: React.FC = () => {
     return (
-        <Router>
+        <Router basename='/com-conseil'>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
